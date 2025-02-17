@@ -1,0 +1,348 @@
+* {
+  transition: all 0.3s;
+  font-family: "Kanit", serif;
+}
+.navbar {
+  background-color: #ebf5fd;
+  box-shadow: 0 0 40px rgb(232, 249, 255);
+  padding: 1rem 4%;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  width: 100%;
+  top: 0;
+  opacity: 0.9;
+}
+.nav-con {
+  justify-content: space-between;
+}
+.links a {
+  margin-left: 35px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #2973b2;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+.links a:hover {
+  color: rgb(161, 227, 249);
+  transition: 0.3s;
+}
+.navbar-brand {
+  color: #2973b2;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.navbar-brand:hover {
+  color: rgb(161, 227, 249);
+}
+.navbar-brand svg {
+  color: #2973b2;
+  font-size: 22px;
+  font-weight: 800;
+}
+/************************/
+
+section {
+  padding: 2rem 6%;
+}
+.home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 5rem;
+  padding-top: 2rem;
+  background-color: rgb(251, 251, 251);
+  height: 100vh;
+}
+.home .image {
+  flex: 0.5 1 20rem;
+}
+.home .image img {
+  width: 100%;
+}
+.home .content {
+  flex: 0.5 1 20rem;
+}
+.home .content h1 {
+  font-size: 3rem;
+  color: #2973b2;
+}
+
+.home .content h3 {
+  font-size: 2rem;
+  color: rgb(161, 227, 249);
+  margin-bottom: 3rem;
+}
+.home .content .form-select {
+  font-size: 1.2rem;
+  padding: 5px 12px 5px 12px;
+  background-color: #fbfbfb;
+  border: 1px solid rgb(161, 227, 249);
+  color: #2973b2;
+  flex: 0.5 1 12.5rem;
+}
+.home .contect .form-select option:hover {
+  background-color: #2973b2;
+  color: white;
+}
+/* .home .content .form-select  {
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: #2973b2;
+  background-color: #ebf5fd;
+} */
+
+.add {
+  display: block;
+  border: 0;
+  border: 1px solid rgb(161, 227, 249);
+  border-radius: 5px;
+  padding: 5px 12px 5px 12px;
+  flex: 0.7 1 15rem;
+  background-color: #fbfbfb;
+  color: #2973b2;
+  font-size: 1.2rem;
+}
+.add:focus {
+  outline: 4px solid rgb(161, 227, 249);
+}
+.add::placeholder {
+  color: #2973b2;
+}
+.home .content form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.home .content form .submit {
+  flex: 0.4 1 10rem;
+  text-align: center;
+  border: 0;
+  background-color: rgb(161, 227, 249);
+  color: #2973b2;
+  padding: 5px 12px 5px 12px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+.home .content form .submit:hover {
+  background-color: #2973b2;
+  color: white;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .home .content {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .home .content .add {
+    flex: 0.5 1 12.5rem;
+  }
+
+  .form-select,
+  .add {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .home .image {
+    display: none;
+  }
+}
+/**************************/
+.services {
+  margin-bottom: 50px;
+  background-color: rgb(250, 255, 250);
+  padding-bottom: 30px;
+  padding-top: 3rem;
+}
+.service {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+}
+.service .icon {
+  padding: 0.8rem;
+  border: 1px solid rgb(161, 227, 249);
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(209, 248, 239);
+  box-shadow: 0 0 25px rgb(209, 248, 239);
+  cursor: pointer;
+}
+.service .icon:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.services .heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #2973b2;
+  margin-bottom: 1rem;
+}
+.service .icon i {
+  font-size: 2rem;
+  color: #2973b2;
+  margin-bottom: 1.5rem;
+}
+.service .icon h4 {
+  color: rgb(87, 143, 202);
+}
+
+/****************************/
+
+.icon-container {
+  padding-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.special-icon {
+  text-align: center;
+  padding: 3px;
+}
+.special-icon i {
+  font-size: 2.1rem;
+  color: #2973b2;
+  margin-bottom: 1rem;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  line-height: 2.1;
+}
+.special .heading,
+.best .heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #2973b2;
+  margin-bottom: 1rem;
+}
+.special {
+  margin-top: 80px;
+  background-color: #fbfbfb;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+.special-icon h4 {
+  color: #2973b2;
+}
+
+.special-icon a:hover i {
+  background-color: #2973b2;
+  color: white;
+}
+
+/***************************/
+.best-container {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 2.3rem;
+  margin-top: 50px;
+}
+
+.best-container .best-card {
+  background-color: #ebf5fd;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgb(209, 248, 239);
+  text-align: center;
+  cursor: pointer;
+}
+.best-container .best-card:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+.best-container .best-card i {
+  font-size: 2.5rem;
+  color: #2973b2;
+  margin-bottom: 1rem;
+  margin-top: 10px;
+}
+
+.best-container .best-card h4 {
+  font-size: 1.5rem;
+  color: #2973b2;
+  margin-bottom: 1rem;
+}
+.best-container .best-card p {
+  color: rgb(87, 143, 202);
+  font-size: 1rem;
+}
+/************************/
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  gap: 2rem;
+  text-transform: capitalize;
+}
+.footer .box-container .box h3 {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: #2973b2;
+}
+.footer {
+  background-color: #fbfbfb;
+  margin-top: 100px;
+}
+.footer .box-container .box a {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  display: block;
+  color: rgb(87, 143, 202);
+  text-decoration: none;
+}
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: rgb(92, 162, 238);
+}
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+.footer .credit {
+  padding: 1rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: gray;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.footer .credit span {
+  color: #2973b2;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2973b2;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fbfbfb;
+  width: 50px;
+}
